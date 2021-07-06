@@ -1,0 +1,90 @@
+@use "../abstracts/variables" as var;
+
+.btn {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: var.$default-font-size;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  transition: 0.2s ease-out;
+
+  //! Change for the <button> element
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(var.$color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(var.$color-black, 0.2);
+  }
+
+  &--white {
+    background-color: var.$color-white;
+    color: var.$color-grey-dark;
+
+    &::after {
+      background-color: var.$color-white;
+    }
+  }
+
+  &--green {
+    background-color: var.$color-primary;
+    color: var.$color-white;
+
+    &::after {
+      background-color: var.$color-primary;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    z-index: -1;
+    transition: 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.6s ease-out 0.7s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  display: inline-block;
+  font-size: var.$default-font-size;
+  text-decoration: none;
+  color: var.$color-primary;
+  border-bottom: 1px solid var.$color-primary;
+  padding: 3px;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: var.$color-primary;
+    color: var.$color-white;
+    box-shadow: 0 1rem 2rem rgba(var.$color-primary, 0.2);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 0.5rem 1rem rgba(var.$color-primary, 0.2);
+  }
+}

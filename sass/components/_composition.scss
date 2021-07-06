@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.composition {
+  position: relative;
+
+  &__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(var.$color-primary-light, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    outline-offset: 2rem;
+    transition: 0.2s ease-out;
+
+    @include mix.responsive(tab-potrait) {
+      float: left;
+      position: relative;
+      width: 33.333333%;
+      box-shadow: 0 1.5rem 3rem rgba(var.$color-primary-light, 0.2);
+      outline-offset: 1rem;
+    }
+
+    &--p1 {
+      left: 0;
+      top: -2rem;
+
+      @include mix.responsive(tab-potrait) {
+        top: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    &--p2 {
+      right: 0;
+      top: 2rem;
+
+      @include mix.responsive(tab-potrait) {
+        top: -1rem;
+        transform: scale(1.3);
+        z-index: 15;
+      }
+    }
+
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+
+      @include mix.responsive(tab-potrait) {
+        top: 1rem;
+        left: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(var.$color-primary, 0.5);
+      outline: 1.5rem solid var.$color-primary;
+      z-index: 20;
+
+      @include mix.responsive(tab-potrait) {
+        outline: 1rem solid var.$color-primary;
+      }
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}

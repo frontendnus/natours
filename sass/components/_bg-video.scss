@@ -1,0 +1,16 @@
+@use '../abstracts/mixins' as mix;
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include mix.fullHeightWidth();
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: -1;
+
+  &__content {
+    @include mix.fullHeightWidth();
+    object-fit: cover;
+  }
+}

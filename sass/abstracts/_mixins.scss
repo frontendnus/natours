@@ -1,0 +1,59 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin centerPositionAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin fullHeightWidth {
+  width: 100%;
+  height: 100%;
+}
+
+//! ORDER BREAKPOINTS:
+//todo 1. BASE + TYPOGRAPHY
+//todo 2. GENERAL LAYOUT
+//todo 3. GRID
+//todo 4. SPESIFIC LAYOUT
+//todo 5. COMPONENTS
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-potrait {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-landscape {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == images {
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+      @content;
+    }
+  }
+}
