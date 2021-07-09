@@ -774,27 +774,27 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7330), url(../../img/nat-5-small.jpg);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7330), url(../img/nat-5-small.jpg);
 }
 @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   .card__picture--1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7330), url(../../img/nat-5.jpg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7330), url(../img/nat-5.jpg);
   }
 }
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../img/nat-6-small.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6-small.jpg);
 }
 @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   .card__picture--2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../img/nat-6.jpg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg);
   }
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-7-small.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7-small.jpg);
 }
 @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   .card__picture--3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-7.jpg);
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg);
   }
 }
 .card__heading {
@@ -1597,7 +1597,7 @@ body {
 .section-features {
   padding: 20rem 0;
   margin-top: -10rem;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../../img/nat-4-small.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/nat-4-small.jpg);
   background-size: cover;
   background-position: center;
   transform: skewY(-7deg);
@@ -1607,7 +1607,7 @@ body {
 }
 @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   .section-features {
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../../img/nat-4.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/nat-4.jpg);
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1648,24 +1648,24 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../../img/nat-10-small.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../img/nat-10-small.jpg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
 }
 @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../../img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../img/nat-10.jpg);
   }
 }
 @media only screen and (max-width: 75em) {
   .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 65%, transparent 65%), url(../../img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 65%, transparent 65%), url(../img/nat-10.jpg);
   }
 }
 @media only screen and (max-width: 56.25em) {
   .book {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%, transparent 65%), url(../../img/nat-10.jpg);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%, transparent 65%), url(../img/nat-10.jpg);
   }
 }
 .book__form {

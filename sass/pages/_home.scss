@@ -19,7 +19,7 @@
       rgba(var.$color-primary-light, 0.7),
       rgba(var.$color-primary-dark, 0.7)
     ),
-    url(../../img/nat-4-small.jpg);
+    url(../img/nat-4-small.jpg);
   background-size: cover;
   background-position: center;
 
@@ -35,7 +35,7 @@
         rgba(var.$color-primary-light, 0.7),
         rgba(var.$color-primary-dark, 0.7)
       ),
-      url(../../img/nat-4.jpg);
+      url(../img/nat-4.jpg);
   }
 
   @include mix.responsive(tab-potrait) {
@@ -82,7 +82,7 @@
       rgba(var.$color-white, 0.85) 50%,
       transparent 50%
     ),
-    url(../../img/nat-10-small.jpg);
+    url(../img/nat-10-small.jpg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(var.$color-black, 0.3);
@@ -94,7 +94,7 @@
         rgba(var.$color-white, 0.85) 50%,
         transparent 50%
       ),
-      url(../../img/nat-10.jpg);
+      url(../img/nat-10.jpg);
   }
 
   @include mix.responsive(tab-landscape) {
@@ -104,7 +104,7 @@
         rgba(var.$color-white, 0.85) 65%,
         transparent 65%
       ),
-      url(../../img/nat-10.jpg);
+      url(../img/nat-10.jpg);
   }
 
   @include mix.responsive(tab-potrait) {
@@ -114,7 +114,7 @@
         rgba(var.$color-white, 0.85) 100%,
         transparent 65%
       ),
-      url(../../img/nat-10.jpg);
+      url(../img/nat-10.jpg);
   }
 
   &__form {
